@@ -1,52 +1,54 @@
 # spring-reactive-chat
 
-Chat application built with Spring WebFlux
+Spring WebFlux로 구축된 채팅 애플리케이션
 
-[Frontend built with Vue.js](https://github.com/nireinhard/VueChat)
 
-## Requirements
+[Vue.js로 구축된 프론트엔드](https://github.com/nireinhard/VueChat)
+
+## 요구 사항
 
 - Java 17
 - MongoDB 3.6+
 
-## Getting Started
+## 시작하기
 
-### Building from Source
+### 소스에서 빌드
 
-This project uses [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) and the [Gradle Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html).
+이 프로젝트는 [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)와 [Gradle Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl)을 사용합니다. HTML).
 
-To build the project use:
+프로젝트를 빌드하려면 다음을 사용하십시오.
 
 ```Shell
 gradlew clean build
 ```
 
-### Running the Application
+### 애플리케이션 실행
 
-To run the application you can use one of the tasks provided by the Spring Boot Gradle Plugin:
+
+애플리케이션을 실행하려면 Spring Boot Gradle 플러그인에서 제공하는 작업 중 하나를 사용할 수 있습니다.
 
 ```Shell
 gradlew bootRun
 ```
 
-Additionally, you can also set specific application profiles, e.g. for `dev` use:
+또한 특정 애플리케이션 프로필을 설정할 수도 있습니다. `dev`의 경우:
 
 ```Shell
 gradlew bootRun --args='--spring.profiles.active=dev'
 ```
 
-## Using MongoDB
+## 몽고DB 사용하기
 
-The project makes use of [MongoDB Change Streams](https://www.mongodb.com/docs/manual/changeStreams/) to stream new chats and chat messages via Server-Sent Events (SSE) endpoints based on the `text/event-stream` media type.
+이 프로젝트는 [MongoDB Change Streams](https://www.mongodb.com/docs/manual/changeStreams/)를 사용하여 `text/ event-stream` 미디어 유형.
 
-> Change Stream support is only possible for replica sets or for a sharded cluster.
+> 변경 스트림 지원은 복제본 세트 또는 sharded  클러스터에 대해서만 가능합니다.
 >
 > &mdash; [Spring Data MongoDB Reference Documentation](https://docs.spring.io/spring-data/mongodb/docs/3.3.3/reference/html/#change-streams)
 
-Running a standalone MongoDB instance and calling the aforementioned endpoint will result in an exception:
+독립 실행형 MongoDB 인스턴스를 실행하고 앞서 언급한 엔드포인트를 호출하면 예외가 발생합니다.
 
-> com.mongodb.MongoCommandException: Command failed with error 40573 (Location40573): 'The $changeStream stage is only supported on replica sets' on server localhost:27017.
+> com.mongodb.MongoCommandException: 명령이 오류 40573으로 실패했습니다: 서버 localhost:27017의 '$changeStream 단계는 복제본 세트에서만 지원됩니다.'
 
-Please refer to this [tutorial](https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/) to deploy a replica set.
+이 [튜토리얼]을 참조하십시오.(https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/) 복제 세트를 배포합니다.
 
-Feel free to use the included [Docker Compose file](docker-compose.yml) to get started locally.
+포함된 [Docker Compose 파일](docker-compose.yml)을 사용하여 로컬에서 시작하세요.
