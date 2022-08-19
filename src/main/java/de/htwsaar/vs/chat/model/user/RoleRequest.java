@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
 /**
- * Role object model.
+* 역할 개체 모델.
  *
  * @author Mahan Karimi
  * @see User

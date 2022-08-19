@@ -8,7 +8,8 @@ import org.springframework.data.mongodb.core.mapping.event.ValidatingMongoEventL
 import javax.validation.Validator;
 
 /**
- * Configuration class for Spring Data MongoDB.
+
+* Spring Data MongoDB용 구성 클래스.
  *
  * @author Arthur Kelsch
  */

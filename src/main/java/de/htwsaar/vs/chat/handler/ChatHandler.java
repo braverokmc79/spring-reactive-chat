@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 import java.net.URI;
 
 /**
- * Handler methods for {@link ChatRouter}.
+* {@link ChatRouter}의 핸들러 메소드.
  *
  * @author Niklas Reinhard
  * @author Julian Quint

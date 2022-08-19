@@ -8,9 +8,8 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * Adds an Authorization HTTP header with a token to the response.
+ * 응답에 토큰이 있는 Authorization HTTP 헤더를 추가합니다.
  *
- * @author Arthur Kelsch
  */
 public class JwtAuthenticationSuccessHandler implements ServerAuthenticationSuccessHandler {
 

@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 
 /**
- * Integration tests for routes defined in {@link UserRouter}.
+ * {@link UserRouter}에 정의된 경로에 대한 통합 테스트입니다.
  *
  * @author Leslie Marxen
  */

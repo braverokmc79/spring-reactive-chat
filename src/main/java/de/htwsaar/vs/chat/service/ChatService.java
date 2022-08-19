@@ -25,11 +25,8 @@ import static org.springframework.data.mongodb.core.aggregation.Aggregation.newA
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 
 /**
- * Service layer for {@link Chat}.
- *
- * @author Niklas Reinhard
- * @author Julian Quint
- * @see ChatRepository
+ * {@link Chat}의 서비스 계층. *
+ * 
  */
 @Service
 @RequiredArgsConstructor

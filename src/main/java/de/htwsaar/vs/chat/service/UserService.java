@@ -15,11 +15,8 @@ import reactor.core.publisher.Mono;
 import javax.validation.Valid;
 
 /**
- * Service layer for {@link User}.
+ * {@link 사용자}의 서비스 계층.
  *
- * @author Arthur Kelsch
- * @author Mahan Karimi
- * @see UserRepository
  */
 @Service
 @Validated

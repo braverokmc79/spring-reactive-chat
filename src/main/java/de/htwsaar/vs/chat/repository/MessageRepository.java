@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
 
 /**
- * Spring Data Repository for {@link Message}.
- *
+* {@link Message}용 Spring 데이터 저장소.
  * @author Niklas Reinhard
  */
 @Repository

@@ -16,7 +16,7 @@ import static org.springframework.http.HttpStatus.CONFLICT;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 
 /**
- * Integration tests for routes defined in {@link AuthRouter}.
+ * {@link AuthRouter}에 정의된 경로에 대한 통합 테스트입니다.
  *
  * @author Arthur Kelsch
  */

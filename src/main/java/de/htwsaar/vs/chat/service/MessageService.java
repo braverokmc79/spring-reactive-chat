@@ -12,12 +12,8 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Service layer for {@link Message}.
- *
- * @author Niklas Reinhard
- * @author Julian Quint
- * @author Mahan Karimi
- * @see MessageRepository
+ * {@link Message}에 대한 서비스 계층.
+ * 
  */
 @Service
 @RequiredArgsConstructor

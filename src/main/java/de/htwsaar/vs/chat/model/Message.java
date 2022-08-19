@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 import java.time.Instant;
 
 /**
- * Message object model (MongoDB Document).
+* 메시지 객체 모델(MongoDB 문서).
  *
  * @author Niklas Reinhard
  * @author Julian Quint

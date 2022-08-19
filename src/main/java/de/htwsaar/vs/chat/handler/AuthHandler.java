@@ -13,7 +13,8 @@ import reactor.core.publisher.Mono;
 import java.net.URI;
 
 /**
- * Handler methods for {@link AuthRouter}.
+
+* {@link AuthRouter}에 대한 핸들러 메소드.
  *
  * @author Arthur Kelsch
  */

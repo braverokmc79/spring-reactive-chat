@@ -11,14 +11,13 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * Converts a token from an Authorization HTTP header into an {@link Authentication}
- * object. This includes verifying the tokens' signature.
+* Authorization HTTP 헤더의 토큰을 {@link 인증}으로 변환
+ * 물체. 여기에는 토큰의 서명 확인이 포함됩니다.
  * <p>
- * If the Authorization header is empty, query parameters get checked for a
- * token as server-sent events do not support setting custom HTTP headers.
- * This requires the {@code text/event-stream} Accept header to be set.
+ * Authorization 헤더가 비어 있으면 쿼리 매개변수에서
+ * 서버 전송 이벤트로서의 토큰은 사용자 정의 HTTP 헤더 설정을 지원하지 않습니다.
+ * 이를 위해서는 {@code text/event-stream} Accept 헤더를 설정해야 합니다.
  *
- * @author Arthur Kelsch
  */
 public class JwtAuthorizationConverter implements ServerAuthenticationConverter {
 

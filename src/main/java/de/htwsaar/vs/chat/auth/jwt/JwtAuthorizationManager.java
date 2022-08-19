@@ -8,9 +8,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import reactor.core.publisher.Mono;
 
 /**
- * Finds an authenticated user in the database and authorizes him.
+* 데이터베이스에서 인증된 사용자를 찾아 권한을 부여합니다.
  *
- * @author Arthur Kelsch
  */
 public class JwtAuthorizationManager implements ReactiveAuthenticationManager {
 

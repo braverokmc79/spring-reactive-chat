@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * User object model (MongoDB document).
+* 사용자 객체 모델(MongoDB 문서).
  *
  * @author Arthur Kelsch
  */

@@ -6,7 +6,8 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 
 /**
- * Status object model.
+ 
+* 상태 개체 모델.
  *
  * @author Mahan Karimi
  * @see User

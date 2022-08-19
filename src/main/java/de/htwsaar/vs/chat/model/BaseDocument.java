@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 
 /**
- * Base MongoDB document for all other document classes.
+* 다른 모든 문서 클래스에 대한 기본 MongoDB 문서.
  *
  * @author Arthur Kelsch
  */

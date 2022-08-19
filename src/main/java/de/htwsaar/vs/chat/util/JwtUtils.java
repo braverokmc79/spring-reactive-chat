@@ -10,9 +10,8 @@ import org.springframework.security.core.Authentication;
 import java.util.Date;
 
 /**
- * Utility class providing methods to work with JSON Web Tokens.
+ * JSON 웹 토큰으로 작업하기 위한 메서드를 제공하는 유틸리티 클래스입니다.
  *
- * @author Arthur Kelsch
  */
 @UtilityClass
 public final class JwtUtils {
@@ -23,17 +22,17 @@ public final class JwtUtils {
     private static final Algorithm ALGORITHM = Algorithm.HMAC256(SECRET);
 
     /**
-     * Creates a new JWT with the following claims:
+     * 다음 클레임으로 새 JWT를 만듭니다.
      * <ol>
      * <li>sub = user id</li>
      * <li>name = user name</li>
      * <li>exp = 24h from now</li>
      * </ol>
      * <p>
-     * The JWT is signed using HMAC-SHA256 (HS256).
+     * JWT는 HMAC-SHA256(HS256)을 사용하여 서명됩니다.
      *
-     * @param authentication the currently authenticated user
-     * @return a JWT with the above described payload
+     * @param 인증 현재 인증된 사용자
+     * @return은 위에서 설명한 페이로드로 JWT를 반환합니다.
      */
     public static String createToken(Authentication authentication) {
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
@@ -55,10 +54,10 @@ public final class JwtUtils {
     }
 
     /**
-     * Verifies the signature of a given JWT.
+     * 주어진 JWT의 서명을 확인합니다.
      *
-     * @param token the JWT to verify
-     * @return a verified and decoded JWT
+     * @param 토큰 검증할 JWT
+     * @return 확인 및 디코딩된 JWT
      */
     public static DecodedJWT verifyToken(String token) {
         return JWT.require(ALGORITHM)
@@ -68,10 +67,10 @@ public final class JwtUtils {
     }
 
     /**
-     * Gets the claim called "name" from a given decoded JWT.
+     * 주어진 디코딩된 JWT에서 "name"이라는 클레임을 가져옵니다.
      *
-     * @param jwt the decoded JWT
-     * @return the "name" claim
+     * @param jwt 디코딩된 JWT
+     * @return "이름" 클레임
      */
     public static String getName(DecodedJWT jwt) {
         return jwt.getClaim("name").asString();

@@ -11,12 +11,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
 /**
- * Class that contains Web Security Expressions used by Spring Security
- * (e.g. in annotations like {@link PreAuthorize} and {@link PostAuthorize}).
+* Spring Security에서 사용하는 Web Security Expression을 포함하는 클래스
+ * (예: {@link PreAuthorize} 및 {@link PostAuthorize}와 같은 주석)
  *
- * @author Arthur Kelsch
- * @author Julian Quint
- * @author Mahan Karimi
  */
 @Component
 @RequiredArgsConstructor

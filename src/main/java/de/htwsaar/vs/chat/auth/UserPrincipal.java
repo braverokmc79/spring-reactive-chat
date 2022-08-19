@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.*;
 
 /**
- * {@link UserDetails} implementation used by Spring Security for authentication
- * and authorization.
+* 인증을 위해 Spring Security에서 사용하는 {@link UserDetails} 구현
+ * 및 승인.
  *
  * @author Arthur Kelsch
  * @see User

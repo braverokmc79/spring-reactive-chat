@@ -6,7 +6,7 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 
 /**
- * Password object model.
+* 암호 개체 모델.
  *
  * @author Mahan Karimi
  * @see User

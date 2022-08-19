@@ -14,8 +14,8 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * Extends {@link DefaultErrorAttributes} to change the response HTTP status code
- * in case of well known exceptions.
+* 응답 HTTP 상태 코드를 변경하기 위해 {@link DefaultErrorAttributes}를 확장합니다.
+ * 잘 알려진 예외의 경우.
  *
  * @author Julian Quint
  */

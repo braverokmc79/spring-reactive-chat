@@ -9,21 +9,20 @@ import org.springframework.security.core.userdetails.UserDetails;
 import reactor.core.publisher.Mono;
 
 /**
- * Utility class providing methods to with Spring Security (authentication etc).
+* Spring Security(인증 등)에 메소드를 제공하는 유틸리티 클래스.
  *
- * @author Arthur Kelsch
  */
 @UtilityClass
 public class SecurityUtils {
 
-    /**
-     * Gets a {@link UserPrincipal} object (a custom {@link UserDetails}
-     * implementation) from the current Spring Security authentication.
+	/**
+     * {@link UserPrincipal} 개체를 가져옵니다(맞춤형 {@link UserDetails}
+     * 구현) 현재 Spring Security 인증에서.
      * <p>
-     * Important: Spring has to subscribe to the Mono with a context or otherwise
-     * the result will be empty.
+     * 중요: Spring은 컨텍스트 또는 다른 방법으로 Mono를 구독해야 합니다.
+     * 결과는 비어 있습니다.
      *
-     * @return a {@link Mono} of said {@link UserPrincipal}
+     * @return a {@link Mono}의 {@link UserPrincipal}
      */
     public static Mono<UserPrincipal> getPrincipal() {
         return ReactiveSecurityContextHolder.getContext()

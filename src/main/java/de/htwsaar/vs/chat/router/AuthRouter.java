@@ -11,7 +11,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RequestPredicates.path;
 
 /**
- * Routes starting with {@code /auth}.
+* {@code /auth}로 시작하는 경로.
  *
  * @author Arthur Kelsch
  */

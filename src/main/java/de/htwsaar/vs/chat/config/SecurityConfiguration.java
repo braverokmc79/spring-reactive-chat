@@ -29,7 +29,7 @@ import org.springframework.web.server.WebFilter;
 import java.util.List;
 
 /**
- * Configuration class for Spring Security.
+* Spring Security용 구성 클래스.
  *
  * @author Arthur Kelsch
  */
@@ -43,7 +43,7 @@ public class SecurityConfiguration {
     @Value("${chat.https.enabled:false}")
     private boolean httpsEnabled;
 
-    @Value("${chat.cors.allowedOrigin:http://localhost:8080}")
+    @Value("${chat.cors.allowedOrigin:http://localhost:8082}")
     private String allowedOrigin;
 
     @Bean

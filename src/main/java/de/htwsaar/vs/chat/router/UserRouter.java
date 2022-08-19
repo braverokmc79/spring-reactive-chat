@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import static org.springframework.web.reactive.function.server.RequestPredicates.*;
 
 /**
- * API routes starting with {@code /users}.
+ * {@code /users}로 시작하는 API 경로.
  *
  * @author Arthur Kelsch
  * @author Mahan Karimi

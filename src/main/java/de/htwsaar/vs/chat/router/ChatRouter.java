@@ -11,8 +11,8 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import static org.springframework.web.reactive.function.server.RequestPredicates.*;
 
 /**
- * API routes starting with {@code /chats}.
- *
+* {@code /chats}로 시작하는 API 경로.
+* 
  * @author Niklas Reinhard
  * @author Julian Quint
  */

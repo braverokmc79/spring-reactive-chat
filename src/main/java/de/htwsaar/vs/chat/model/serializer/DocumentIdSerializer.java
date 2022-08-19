@@ -8,9 +8,9 @@ import de.htwsaar.vs.chat.model.BaseDocument;
 import java.io.IOException;
 
 /**
- * Jackson serializer used on fields extending {@link BaseDocument}.
+* {@link BaseDocument}를 확장하는 필드에 사용되는 Jackson 직렬 변환기.
  * <p>
- * It writes the id of a given document to JSON.
+ * 주어진 문서의 id를 JSON에 씁니다.
  *
  * @author Arthur Kelsch
  */

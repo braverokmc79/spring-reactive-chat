@@ -16,9 +16,8 @@ import reactor.core.publisher.Mono;
 import java.util.Objects;
 
 /**
- * Converts a JSON payload from a request into an {@link Authentication} object.
+ * 요청의 JSON 페이로드를 {@link 인증} 개체로 변환합니다.
  *
- * @author Arthur Kelsch
  */
 public class JwtAuthenticationConverter implements ServerAuthenticationConverter {
 
